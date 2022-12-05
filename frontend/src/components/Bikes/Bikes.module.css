@@ -1,0 +1,44 @@
+.bike_cont {
+  width: 22%;
+  margin-top: 25px;
+  padding: 10px;
+  height: 300px;
+  border-radius: 10px;
+  position: relative;
+  background-color: #2d3748;
+}
+
+.bike_img_cont {
+  width: 100%;
+  height: 150px;
+}
+
+.bike_img_cont img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.bike_details h3 {
+  text-transform: capitalize;
+}
+
+.car_action button {
+  background-color: #1f1b2c;
+  padding: 10px 15px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn_delete {
+  margin-left: 10px;
+}
+.btn_book {
+  position: absolute;
+  right: 10px;
+}

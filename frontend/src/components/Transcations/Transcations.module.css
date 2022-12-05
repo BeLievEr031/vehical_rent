@@ -1,0 +1,49 @@
+.filter_cont {
+  display: flex;
+  padding: 10px;
+}
+
+select {
+  background-color: #2d3748;
+  font-size: 20px;
+  padding: 1px;
+  border-radius: 5px;
+  outline: none;
+  width: auto;
+}
+
+.years,
+.months {
+  margin-left: 10px;
+}
+
+.bill_cont {
+  padding-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  height: 90vh;
+  overflow: scroll;
+}
+
+.search_btn {
+  background-color: #2d3748;
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-left: 10px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.bill_cont::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.bill_cont {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

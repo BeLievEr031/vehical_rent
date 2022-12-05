@@ -1,0 +1,61 @@
+.status_nav {
+  position: relative;
+}
+span {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.trip_data_cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 10px;
+  height: 90vh;
+  overflow: scroll;
+}
+
+.trip_data_cont::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.trip_data_cont {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.status_search_action {
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.status_search_action input {
+  background-color: white;
+  font-size: 20px;
+  /* position: absolute; */
+  color: black;
+  right: 100px;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.status_search_action button {
+  background-color: #1f1b2c;
+  font-size: 20px;
+  /* position: absolute; */
+  right: 0;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px 10px;
+}
