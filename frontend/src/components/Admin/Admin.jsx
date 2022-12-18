@@ -54,6 +54,7 @@ function Admin() {
   useEffect(() => {
     async function fetchData() {
       try {
+        console.log("fetching user...");
         let res = await axios({
           method: "get",
           url: `${userUrl}/detail`,
@@ -61,11 +62,14 @@ function Admin() {
             token: window.localStorage.getItem("token"),
           },
         });
+        console.log(" user fetched...");
 
         console.log(res.data);
         res = res.data;
         setUsersArr([...res.user]);
-      } catch (error) {}
+      } catch (error) {
+        console.log(error.message);
+      }
     }
 
     fetchData();

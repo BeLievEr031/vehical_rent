@@ -60,7 +60,7 @@ const loginUser = async (req, res) => {
     const isUser = await UserModel.findOne({ email }).select("+password");
 
     if (!isUser) {
-      res.json({
+      return res.json({
         success: false,
         msg: "Invalid Credentiasls...",
       });
@@ -69,7 +69,7 @@ const loginUser = async (req, res) => {
     const isPasssword = await bcrypt.compare(password, isUser.password);
 
     if (!isPasssword) {
-      res.json({
+      return res.json({
         success: false,
         msg: "Invalid Credentiasls...",
       });
@@ -132,9 +132,11 @@ const userDetail = async (req, res) => {
     const user = await UserModel.find({});
     res.json({
       success: true,
-      msg: "User fetched..",
+      msg: "all user fetched..",
       user,
     });
+
+    // console.log(user);
   } catch (error) {
     return res.json({
       success: false,

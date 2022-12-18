@@ -154,7 +154,7 @@ const updateVehical = async (req, res) => {
 
 const getVehical = async (req, res) => {
   try {
-    const user = req.user;
+  
 
     const vehical = await VehicalModel.find({});
     res.json({
