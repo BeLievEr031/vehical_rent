@@ -271,12 +271,16 @@ function Pop({
     <>
       <div className={Style.pop_overlay}>
         <div className={Style.pop_cont}>
-          <input
-            type="file"
-            onChange={(e) => {
-              setFile(e.target.files[0]);
-            }}
-          />
+          {dataForUpdate ? (
+            ""
+          ) : (
+            <input
+              type="file"
+              onChange={(e) => {
+                setFile(e.target.files[0]);
+              }}
+            />
+          )}
           <input
             type="text"
             placeholder="Enter Car Name.."

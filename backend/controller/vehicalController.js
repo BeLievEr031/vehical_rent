@@ -1,10 +1,12 @@
 import VehicalModel from "../models/VehicalModel.js";
 import cloudinaryUpload from "../middleware/cloudinary.js";
 import BookingModel from "../models/BookingModel.js";
+import fs from "fs";
 const addVehicalImage = async (req, res) => {
   try {
     const result = await cloudinaryUpload.uploader.upload(req.file.path);
     // console.log(result);
+
     if (!result) {
       return res.json({
         success: false,
@@ -168,6 +170,9 @@ const getVehical = async (req, res) => {
     });
   }
 };
+
+
+
 
 export {
   addVehicalImage,

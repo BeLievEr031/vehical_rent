@@ -1,0 +1,24 @@
+.user_info_container{
+    padding-left: 20px;
+}
+
+.transcation_info_container {
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.graph_cont {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.user_booking_container {
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 75%;
+}

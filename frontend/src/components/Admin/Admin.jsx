@@ -54,7 +54,7 @@ function Admin() {
   useEffect(() => {
     async function fetchData() {
       try {
-        console.log("fetching user...");
+        // console.log("fetching user...");
         let res = await axios({
           method: "get",
           url: `${userUrl}/detail`,

@@ -133,7 +133,7 @@ const userDetail = async (req, res) => {
     res.json({
       success: true,
       msg: "all user fetched..",
-      user,
+      user: await UserModel.find({}),
     });
 
     // console.log(user);

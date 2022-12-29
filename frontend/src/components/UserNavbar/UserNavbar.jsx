@@ -44,7 +44,7 @@ function UserNavbar({ setProfilePop, userAction, setUserAction }) {
 
         <div className={Style.profile_cont}>
           <Avatar
-            name="ankul"
+            name={JSON.parse(window.localStorage.getItem("user")).name}
             size="50"
             round={true}
             onClick={handleProfilePopOpen}

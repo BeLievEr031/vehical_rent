@@ -4,6 +4,8 @@ import { useParams } from "react-router-dom";
 import { DataProvider } from "../../context/DataProviderContext";
 import Bill from "../TranscationBill/Bill";
 import Style from "./Transcations.module.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function Transcations() {
   const { userID } = useParams();
   console.log(userID);

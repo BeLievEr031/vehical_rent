@@ -95,7 +95,7 @@ function Navbar({ setPop, adminAction, setAdminAction }) {
         </div>
 
         <div className={Style.profile_cont} onClick={handleRedirectToProfile}>
-          <Avatar name="ankul" size="50" round={true} />
+          <Avatar name={JSON.parse(window.localStorage.getItem("user")).name} size="50" round={true} />
         </div>
       </div>
     </nav>

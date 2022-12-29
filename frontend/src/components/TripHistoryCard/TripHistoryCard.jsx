@@ -45,7 +45,7 @@ function TripHistoryCard({
       );
 
       if (date.getTime() > cDate.getTime() && user.role === "user") {
-        return toast.error(error.message, {
+        return toast.error("Unable to cancle...", {
           position: "top-right",
           autoClose: 1000,
           hideProgressBar: false,
@@ -81,7 +81,7 @@ function TripHistoryCard({
       });
 
       res = res.data;
-      // console.log(res);
+      console.log(res);
 
       if (!res.success) {
         return toast.error(res.msg, {
@@ -107,6 +107,7 @@ function TripHistoryCard({
         theme: "dark",
       });
     } catch (error) {
+      console.log(error);
       return toast.error(error.message, {
         position: "top-right",
         autoClose: 1000,
