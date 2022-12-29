@@ -97,6 +97,13 @@ function Home() {
       )}
 
       {profilePop ? <UserProfilePop setProfilePop={setProfilePop} /> : ""}
+
+      <div className={Style.copy_cont}>
+        <h1>
+          <span class="material-symbols-outlined">copyright</span>2022 Chetan
+          Tirmale
+        </h1>
+      </div>
     </>
   );
 }
